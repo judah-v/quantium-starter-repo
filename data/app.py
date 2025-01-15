@@ -31,6 +31,7 @@ graph = dcc.Graph(
 
 app = Dash()
 app.layout = [
+    html.H1("Pink morsel Sales Data"),
     dcc.RadioItems(id='radio', options=['North', 'South', 'East', 'West', 'All'], value='All'),
     graph,
 ]
